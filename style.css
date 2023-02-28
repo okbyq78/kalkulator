@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: linear-gradient(
+    to bottom left,
+    rgba(70, 230, 147, 1) 0%,
+    rgba(34, 177, 198, 1) 40%,
+    rgba(56, 56, 219, 1) 100%
+  );
+}
+
+.mainCalculatorBody {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 30vw;
+
+  background-color: rgb(46, 50, 59);
+  border-radius: 35px;
+}
+
+.resultContainer {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1vw;
+}
+
+.lastResult {
+  font-size: 1.5vw;
+  color: rgb(175, 175, 175);
+  padding: 0 1vw;
+}
+
+.result {
+  font-size: 5vw;
+}
+
+.mainButtonsContainer {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  background-color: rgb(33, 36, 44);
+  border-radius: 35px;
+}
+
+.row {
+  display: flex;
+  width: 30vw;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.button {
+  background-color: rgb(46, 50, 59);
+  border: 0;
+  border-radius: 15px;
+  width: 5.5vw;
+  height: 5.5vw;
+  font-size: 2vw;
+}
+
+.button:hover {
+  background-color: rgb(73, 78, 92);
+  cursor: pointer;
+}
+
+.symbol {
+  color: rgb(224, 95, 95);
+}
+
+.dot {
+  color: rgb(93, 221, 110);
+}
+
+.equals {
+  color: rgb(93, 221, 110);
+}
